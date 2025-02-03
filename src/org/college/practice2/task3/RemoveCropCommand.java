@@ -1,4 +1,4 @@
-package org.college.practice2.task3
+package org.college.practice2.task3;
 
 class RemoveCropCommand extends AbstractCommand {
     private String cropName;

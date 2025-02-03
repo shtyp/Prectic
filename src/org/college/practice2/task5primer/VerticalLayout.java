@@ -1,5 +1,8 @@
 package org.college.practice2.task5primer;
 
+import java.util.ArrayList;
+import java.util.List;
+
 class VerticalLayout implements WindowComponent {
     private String name;
     private List<WindowComponent> nestedComponents = new ArrayList<>();

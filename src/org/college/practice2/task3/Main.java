@@ -18,4 +18,5 @@ public class Main {
         System.out.println("\nUndoing all farm commands:");
         controller.undoAllChanges();
     }
+}
 
