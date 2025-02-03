@@ -1,9 +1,9 @@
-package org.college.practice2.taks3.taks3;
+package org.college.practice2.task3;
 
 import java.util.ArrayList;
 import java.util.List;
 
-class WindowController {
+class FarmController {
     private List<AbstractCommand> commands = new ArrayList<>();
     private List<AbstractCommand> commandHistory = new ArrayList<>();
 
@@ -30,4 +30,3 @@ class WindowController {
         commandHistory.clear();
     }
 }
-
