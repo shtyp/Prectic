@@ -1,8 +1,7 @@
-package org.college.practice2.task2;
+package org.college.practice2.task2primer;
 
-import org.college.practice2.task2.Picture;
-class UsaPictureBuilder extends PictureBuilder {
-    public UsaPictureBuilder() {
+final class UkrainePictureBuilder extends PictureBuilder {
+    public UkrainePictureBuilder() {
         this.picture = new Picture(null, (short) 0, null, null, null, null, null, false, null);
     }
 
@@ -10,7 +9,7 @@ class UsaPictureBuilder extends PictureBuilder {
     public PictureBuilder setBasicParams(String name, short year, String author) {
         picture.setName(name);
         picture.setYear(year);
-        picture.author = author;
+        picture._author = author;
         return this;
     }
 

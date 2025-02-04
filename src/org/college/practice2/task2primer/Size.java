@@ -1,5 +1,5 @@
-package org.college.practice2.task2;
-import org.college.practice2.task2.Size;
+package org.college.practice2.task2primer;
+
 class Size {
     private short height;
     private short width;

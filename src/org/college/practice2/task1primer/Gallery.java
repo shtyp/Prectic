@@ -1,4 +1,4 @@
-package org.college.practice2.task1;
+package org.college.practice2.task1primer;
 
 import java.util.ArrayList;
 import java.util.List;

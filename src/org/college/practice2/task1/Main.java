@@ -1,31 +1,23 @@
 package org.college.practice2.task1;
-import org.college.practice2.task1.Picture;
 
 public class Main {
     public static void main(String[] args) {
+        Farm farm = Farm.getInstance("Sunny Farm");
+        farm.setDescription("Organic farm specializing in wheat and corn.");
 
-        Gallery gallery = Gallery.getInstance("Modern Art Gallery");
+        Crop wheat = new Crop("Wheat", 2024, "John Doe");
+        Crop corn = new Crop("Corn", 2024, "Jane Smith");
 
-        Picture pic1 = new Picture("Starry Night", (short) 1889, "Vincent van Gogh");
-        Picture pic2 = new Picture("Mona Lisa", (short) 1503, "Leonardo da Vinci");
-        Picture pic3 = new Picture("The Persistence of Memory", (short) 1931, "Salvador Dalí");
+        farm.addCrop(wheat);
+        farm.addCrop(corn);
 
-        gallery.addPicture(pic1);
-        gallery.addPicture(pic2);
-        gallery.addPicture(pic3);
-        System.out.println("Gallery Name: " + gallery.getName());
-        System.out.println("Number of Pictures: " + gallery.getPictureCount());
+        System.out.println("Farm: " + farm.getName());
+        System.out.println("Description: " + farm.getDescription());
+        System.out.println("Total Crops: " + farm.getCropCount());
 
-        for (Picture picture : gallery.getPictures()) {
-            System.out.println(gallery.describePicture(picture));
+        for (Crop crop : farm.getCrops()) {
+            System.out.println(farm.describeCrop(crop));
         }
-
-        Picture retrievedPicture = gallery.getPicture("Mona Lisa");
-        if (retrievedPicture != null) {
-            System.out.println("Retrieved Picture: " + retrievedPicture);
-        }
-
-        gallery.removePicture(pic2);
-        System.out.println("Number of Pictures after removal: " + gallery.getPictureCount());
     }
 }
+

@@ -1,5 +1,5 @@
-package org.college.practice2.task2;
-import org.college.practice2.task2.PictureBuilder;
+package org.college.practice2.task2primer;
+
 abstract class PictureBuilder {
     protected Picture picture;
 

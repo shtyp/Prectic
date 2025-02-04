@@ -1,4 +1,4 @@
-package org.college.practice2.task2;
+package org.college.practice2.task2primer;
 
 class Picture {
     public String author;

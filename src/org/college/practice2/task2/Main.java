@@ -1,16 +1,14 @@
 package org.college.practice2.task2;
 
-import org.college.practice2.task2.UsaPictureBuilder;
 public class Main {
     public static void main(String[] args) {
-        PictureBuilder builder = new UkrainePictureBuilder();
-        Picture picture = builder.setBasicParams("Night Sky", (short) 2021, "Ivan Ivanov")
-                .setSizeParams(new Size((short) 120, (short) 80))
-                .setColorParams(new String[]{"Blue", "Black"}, true, "Canvas")
-                .setCategoryParams("Nature", "Landscape")
-                .build();
+        LocalCropBuilder localBuilder = new LocalCropBuilder("Wheat", 2024, "John Doe", "Grain", "Golden", 1.5, 2.0);
+        Crop wheat = localBuilder.build();
 
-        System.out.println(picture);
+        ImportedCropBuilder importedBuilder = new ImportedCropBuilder("Banana", 2024, "Jane Smith", "Fruit", "Yellow", 0.3, 1.2);
+        Crop banana = importedBuilder.build();
+
+        System.out.println(wheat);
+        System.out.println(banana);
     }
 }
-
