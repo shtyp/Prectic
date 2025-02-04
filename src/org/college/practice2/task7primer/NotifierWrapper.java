@@ -1,9 +1,9 @@
 package org.college.practice2.task7primer;
 
-abstract class AlertNotifierWrapper implements IWrapper {
+abstract class NotifierWrapper implements IWrapper {
     protected IWrapper wrapper;
 
-    public AlertNotifierWrapper(IWrapper wrapper) {
+    public NotifierWrapper(IWrapper wrapper) {
         this.wrapper = wrapper;
     }
 
@@ -14,3 +14,4 @@ abstract class AlertNotifierWrapper implements IWrapper {
         }
     }
 }
+

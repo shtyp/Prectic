@@ -13,7 +13,7 @@ class ApplicationManager {
         }
     }
 
-    public void main() {
+    public void AplicationManeger() {
         ioController.printReport();
         ioController.sendReportViaMail();
     }

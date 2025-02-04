@@ -2,7 +2,7 @@ package org.college.practice2.task7;
 
 import java.time.LocalDate;
 
-class FarmOperation {
+public class FarmOperation {
     private FarmOperationType type;
     private String description;
     private int fieldNumber;
@@ -15,9 +15,6 @@ class FarmOperation {
         this.fieldNumber = fieldNumber;
         this.date = date;
         this.responsiblePerson = responsiblePerson;
-    }
-
-    public FarmOperation(FarmOperationType farmOperationType, String description, int fieldNumber, LocalDate now, String johnDoe) {
     }
 
     public FarmOperationType getType() { return type; }

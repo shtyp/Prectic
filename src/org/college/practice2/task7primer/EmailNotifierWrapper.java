@@ -1,16 +1,13 @@
 package org.college.practice2.task7primer;
 
-class EmailNotifierWrapper extends AlertNotifierWrapper {
-    private String uniqueName;
-
-    public EmailNotifierWrapper(IWrapper wrapper, String uniqueName) {
+class EmailNotifierWrapper extends NotifierWrapper {
+    public EmailNotifierWrapper(IWrapper wrapper) {
         super(wrapper);
-        this.uniqueName = uniqueName;
     }
 
     @Override
     public void notify(SystemAlert alert) {
         super.notify(alert);
-        System.out.println("[Email] " + uniqueName + " -> " + alert.getMessage());
+        System.out.println("Email уведомление отправлено: " + alert);
     }
 }

@@ -1,5 +1,8 @@
 package org.college.practice2.task4;
 
+
+import org.college.practice2.task7.FarmOperation;
+
 import java.time.LocalDate;
 
 public class FarmManagementSystem {
@@ -23,5 +26,8 @@ public class FarmManagementSystem {
 
         SystemAlert alert2 = new SystemAlert(AlertSeverity.ERROR, "Machine failure: Tractor malfunction", 102, LocalDate.now(), "Tractor System");
         systemController.addAlert(alert2);
+    }
+
+    public void addOperation(FarmOperation operation) {
     }
 }
